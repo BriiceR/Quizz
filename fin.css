@@ -1,0 +1,95 @@
+html
+{
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+h1
+{
+	text-align: center;
+	color: white;
+	margin-top: 100px;
+	font-size: 80px;
+	text-shadow: 0px 10px 10px black;
+}
+
+button 
+{
+	color: black;
+	background-color: #00bf72;
+	font-size: 24px;
+	border-radius: 12px;
+	border: 1px solid white;
+	transition-duration: 0.8s;
+	box-shadow: 0px 2px 10px white;
+	font-family: serif;
+	font-weight: bold;
+	width: 220px;
+	height: 60px;
+}
+
+button:hover
+{
+	background-color: white;
+	color: black;
+	box-shadow: 0px 2px 10px black;
+	cursor: pointer;
+}
+
+article
+{
+	display: flex;
+	justify-content: space-around;
+	top: 150px;
+}
+
+
+/* animation texte FÉLICITATION! */
+
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* responsive */
+
+@media screen and (max-width: 1024px)
+{
+
+h1
+{
+	text-align: center;
+	color: white;
+	margin-top: 100px;
+	font-size: 50px;
+	text-shadow: 0px 10px 10px black;
+}
+html{
+	height: 100%;
+}
+
+}
